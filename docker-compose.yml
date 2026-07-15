@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  lrpm:
+    build: .
+    container_name: proxy-tools
+    ports:
+      - "8085:8085"
+      # Expose 3000 ports range (8100 - 11100)
+      # WARNING on macOS: Exposing 3000 ports in Docker Desktop might cause high CPU/RAM usage during startup.
+      - "8100-11100:8100-11100"
+    volumes:
+      # Mount the database file so mappings are persisted across container restarts.
+      - ./backend/mappings.db:/app/backend/mappings.db
+    restart: unless-stopped

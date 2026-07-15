@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Runtime data
+backend/mappings.db
+
+# Local CA certs (environment-specific, dropped in per machine)
+backend/certs/*.pem
+backend/certs/*.crt
+!backend/certs/.gitkeep
+
+# Third-party agent skills/tools (not project source)
+.agents/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

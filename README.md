@@ -22,7 +22,7 @@ Mở Terminal và làm theo các bước sau:
 
 ```bash
 # 1. Di chuyển vào thư mục code backend
-cd /Applications/Tools/proxy-tools/backend/
+cd proxy-tools/backend/
 
 # 2. Chạy server bằng Python (không cần cài thêm bất cứ package nào)
 python3 server.py
@@ -43,7 +43,7 @@ Lúc này, công cụ đã sẵn sàng chạy dưới nền hệ điều hành m
 2. **Thêm Cấu hình Proxy thủ công:**
    - Bấm nút **"+ Add Proxy"** ở góc phải trên.
    - **Local Port:** Nhập cổng bạn muốn (ví dụ: `33121`).
-   - **Target URL:** Nhập trang đích (ví dụ: `https://vanban.cantho.gov.vn`).
+   - **Target URL:** Nhập trang đích (ví dụ: `https://example.com`).
    - **Description:** Nhập mô tả (ví dụ: "Server Chính").
    - Bấm **Create**.
 
@@ -53,7 +53,7 @@ Lúc này, công cụ đã sẵn sàng chạy dưới nền hệ điều hành m
    
 4. **Trải nghiệm Hệ thống "Site Map" Tự động:**
    - Sau khi bạn lướt trang web bằng địa chỉ `localhost:33121`, quay trở lại Dashboard quản trị (`localhost:8085`).
-   - Bạn sẽ bất ngờ thấy hệ thống tự động liệt kê hàng loạt các kết nối ngầm khác (như `api.vanban...`, `login.vanban...`) đang được gán sẵn cho các cổng mạng trống! Tất cả đều được đánh nhãn **🤖 Auto-discovered**.
+   - Bạn sẽ bất ngờ thấy hệ thống tự động liệt kê hàng loạt các kết nối ngầm khác (như `api.example.com`, `login.example.com`) đang được gán sẵn cho các cổng mạng trống! Tất cả đều được đánh nhãn **🤖 Auto-discovered**.
    - Điều này đồng nghĩa, hệ thống đã giúp bạn bắt gọn toàn bộ cây thư mục mạng của trang web chỉ qua 1 lần tải trang.
 
 5. **Bật/Tắt (Toggle):** 
